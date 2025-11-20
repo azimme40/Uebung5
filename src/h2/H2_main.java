@@ -4,13 +4,13 @@ public class H2_main {
 
 	public static void main(String[] args) 
 	{
-		int n= 67; 
+		int n= 12345; 
 		int digits =0;
 		int [] a = {0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-		
+		digits= 0;
 		digits = String.valueOf(n).length();
-		digits= 0; 
+	
 		int start= 9 - digits; 
 		start= 9-digits; 
 		
@@ -26,10 +26,10 @@ public class H2_main {
 			 a[i]= n % 10; 
 			 n = n/10; 
 		 }
-		 for (int k = start; k< 9; k++)
+		 for (int i = start; i< 9; i++)
 		 {
 			 
-		 System.out.println (a[k]);
+		 System.out.println (a[i]);
 		 
 		 }
 	 }
